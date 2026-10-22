@@ -6,20 +6,19 @@
     <title>DK88 | Домашний Кинотеатр Премиум Класса</title>
     <meta name="description" content="Проектирование и установка домашних кинотеатров под ключ. Dolby Atmos, 4K/8K лазер, интеграция умного дома. Гарантия результата.">
     
-    <!-- Шрифты: Playfair Display (Заголовки как в листовке) + Montserrat (Текст) -->
+    <!-- Шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
     <style>
-        /* === CSS VARIABLES (ЦВЕТА ИЗ ЛИСТОВКИ) === */
+        /* === ЦВЕТА ИЗ ЛИСТОВКИ === */
         :root {
-            --bg-deep: #0a0505;       /* Почти черный с теплым оттенком */
-            --bg-card: #120a0a;       /* Фон карточек */
-            --wine-dark: #2c0e12;     /* Темный бордо (фон секций) */
-            --wine-accent: #5a1418;   /* Ярче бордо для ховера */
-            --gold-main: #d4af37;     /* Классическое золото */
-            --gold-light: #f9e5b6;    /* Светлое золото для текста */
+            --bg-deep: #0a0505;       
+            --bg-card: #120a0a;       
+            --wine-dark: #2c0e12;     
+            --gold-main: #d4af37;     
+            --gold-light: #f9e5b6;    
             --text-white: #ffffff;
             --text-gray: #b0b0b0;
             --border-gold: rgba(212, 175, 55, 0.3);
@@ -31,7 +30,6 @@
             --transition-fast: all 0.3s ease;
         }
 
-        /* === RESET & BASE === */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             background-color: var(--bg-deep);
@@ -39,7 +37,6 @@
             font-family: var(--font-body);
             line-height: 1.7;
             overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
         }
         a { text-decoration: none; color: inherit; transition: var(--transition-fast); }
         ul { list-style: none; }
@@ -124,7 +121,7 @@
         .nav-links a:hover { color: var(--gold-main); }
         .mobile-menu-btn { display: none; color: var(--gold-main); font-size: 1.5rem; cursor: pointer; }
 
-        /* === HERO SECTION (Атмосфера Листовки) === */
+        /* === HERO SECTION === */
         .hero {
             height: 100vh;
             min-height: 700px;
@@ -136,12 +133,11 @@
         .hero-bg-image {
             position: absolute;
             inset: 0;
-            /* Используем качественное фото темного зала с проектором */
             background-image: url('https://images.unsplash.com/photo-1595675024857-0ceeb9b4f5a8?q=80&w=2000&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
             opacity: 0.25;
-            filter: sepia(0.5) hue-rotate(-30deg) contrast(1.2); /* Делаем оттенок ближе к бордо/золоту */
+            filter: sepia(0.5) hue-rotate(-30deg) contrast(1.2);
             z-index: 0;
         }
         .hero-overlay {
@@ -181,7 +177,7 @@
         }
         .hero-actions { display: flex; gap: 20px; flex-wrap: wrap; }
 
-        /* === BRANDS STRIP (Доверие) === */
+        /* === BRANDS STRIP === */
         .brands-strip {
             padding: 30px 0;
             background: #000;
@@ -211,7 +207,7 @@
             100% { transform: translateX(-50%); }
         }
 
-        /* === FEATURES GRID (Преимущества) === */
+        /* === FEATURES GRID === */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -251,7 +247,7 @@
         .feature-card h3 { font-size: 1.5rem; margin-bottom: 15px; color: var(--gold-light); }
         .feature-card p { color: var(--text-gray); font-size: 0.95rem; }
 
-        /* === GALLERY SHOWCASE (Проекты) === */
+        /* === GALLERY SHOWCASE === */
         .gallery-showcase {
             display: grid;
             grid-template-columns: 2fr 1fr;
@@ -290,7 +286,7 @@
         .g-caption h4 { font-family: var(--font-head); font-size: 1.3rem; margin-bottom: 5px; color: var(--gold-main); }
         .g-caption span { font-size: 0.8rem; color: var(--text-gray); text-transform: uppercase; letter-spacing: 1px; }
 
-        /* === PROCESS STEPS (Этапы Работы - ИСПРАВЛЕНО) === */
+        /* === PROCESS STEPS === */
         .process-container {
             background: var(--wine-dark);
             border-top: 1px solid var(--border-gold);
