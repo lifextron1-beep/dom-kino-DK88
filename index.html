@@ -45,7 +45,7 @@
   a{color:inherit;text-decoration:none}
   button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
 
-  /* NAV */
+  /* ===== NAV ===== */
   .nav{
     position:fixed;top:0;left:0;right:0;z-index:100;
     padding:26px 5vw;
@@ -90,7 +90,7 @@
   }
   .menu-overlay.active{opacity:1;pointer-events:all}
 
-  /* HERO */
+  /* ===== HERO ===== */
   .hero{
     position:relative;
     height:100vh;min-height:700px;
@@ -156,7 +156,7 @@
   }
   @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
 
-  /* SECTIONS */
+  /* ===== SECTION BASE ===== */
   section{padding:130px 5vw;position:relative}
   .section-label{
     display:inline-flex;align-items:center;gap:12px;
@@ -171,7 +171,7 @@
   .section-title em{font-style:italic;color:var(--gold);font-weight:300}
   .section-sub{color:var(--muted);font-size:16.5px;max-width:620px;font-weight:300;margin-bottom:70px}
 
-  /* ABOUT */
+  /* ===== ABOUT ===== */
   .about{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:90px;align-items:center}
   .about-stats{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:50px}
@@ -199,7 +199,7 @@
   .feature h4{font-family:'Playfair Display',serif;font-size:19px;font-weight:400;margin-bottom:12px}
   .feature p{font-size:14px;color:var(--muted);line-height:1.55;font-weight:300}
 
-  /* PORTFOLIO */
+  /* ===== PORTFOLIO ===== */
   .portfolio-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:50px;flex-wrap:wrap;gap:24px}
   .portfolio-scroll{
     display:flex;gap:28px;overflow-x:auto;padding-bottom:30px;
@@ -226,7 +226,7 @@
   .project-tags{display:flex;gap:8px;flex-wrap:wrap}
   .project-tag{padding:5px 12px;border:1px solid var(--line);font-size:11px;letter-spacing:.8px;color:var(--muted);text-transform:uppercase}
 
-  /* MODAL */
+  /* ===== MODAL ===== */
   .modal{
     position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.85);
     display:flex;align-items:center;justify-content:center;
@@ -248,7 +248,7 @@
   .modal-body h3{font-family:'Playfair Display',serif;font-size:32px;font-weight:400;margin-bottom:12px}
   .modal-body p{color:var(--muted);font-weight:300;line-height:1.7;margin-bottom:20px}
 
-  /* SHOWROOM */
+  /* ===== SHOWROOM ===== */
   .showroom{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .showroom-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:70px;align-items:center}
   .showroom-image{position:relative;aspect-ratio:16/11;overflow:hidden}
@@ -268,7 +268,7 @@
   }
   .showroom-features li::before{content:'';width:7px;height:7px;background:var(--gold);border-radius:50%;flex-shrink:0}
 
-  /* PROCESS */
+  /* ===== PROCESS ===== */
   .process-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:70px;position:relative}
   .process-steps::before{
     content:'';position:absolute;top:28px;left:6%;right:6%;height:1px;
@@ -285,7 +285,7 @@
   .step h4{font-family:'Playfair Display',serif;font-size:19px;font-weight:400;margin-bottom:10px}
   .step p{font-size:14px;color:var(--muted);line-height:1.55;font-weight:300}
 
-  /* EQUIPMENT */
+  /* ===== EQUIPMENT ===== */
   .equipment{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .equipment-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
   .equip{background:var(--bg-2);position:relative;aspect-ratio:4/3;overflow:hidden;cursor:pointer}
@@ -298,7 +298,7 @@
   .equip p{font-size:14px;color:var(--muted);font-weight:300;max-height:0;overflow:hidden;transition:max-height .5s ease}
   .equip:hover p{max-height:80px}
 
-  /* TESTIMONIALS */
+  /* ===== TESTIMONIALS ===== */
   .testimonials{text-align:center}
   .testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:60px}
   .testimonial{
@@ -317,7 +317,7 @@
   .testimonial-name{font-size:15px;font-weight:500}
   .testimonial-role{font-size:12px;color:var(--muted);letter-spacing:.8px;text-transform:uppercase}
 
-  /* CONTACT */
+  /* ===== CONTACT ===== */
   .contact{background:var(--bg-2);border-top:1px solid var(--line)}
   .contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:80px;align-items:start}
   .contact-info h2{font-family:'Playfair Display',serif;font-size:clamp(30px,3.8vw,52px);font-weight:400;line-height:1.1;margin-bottom:24px}
@@ -351,7 +351,7 @@
   .form-success h4{font-family:'Playfair Display',serif;font-size:26px;margin-bottom:10px}
   .form-success p{color:var(--muted)}
 
-  /* FOOTER */
+  /* ===== FOOTER ===== */
   footer{padding:50px 5vw 36px;border-top:1px solid var(--line);background:var(--bg)}
   .footer-grid{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;padding-bottom:32px;border-bottom:1px solid var(--line);margin-bottom:24px}
   .footer-logo{font-family:'Playfair Display',serif;font-size:22px;letter-spacing:3.5px}
@@ -364,11 +364,11 @@
   .footer-socials a:hover{border-color:var(--gold);color:var(--gold)}
   .footer-bottom{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);letter-spacing:.8px;flex-wrap:wrap;gap:16px}
 
-  /* REVEAL */
+  /* ===== REVEAL ===== */
   .reveal{opacity:0;transform:translateY(36px);transition:opacity .9s ease,transform .9s ease}
   .reveal.visible{opacity:1;transform:translateY(0)}
 
-  /* RESPONSIVE */
+  /* ===== RESPONSIVE ===== */
   @media (max-width:1100px){
     .features{grid-template-columns:repeat(3,1fr)}
     .process-steps{grid-template-columns:repeat(3,1fr);gap:36px}
@@ -403,6 +403,7 @@
 </head>
 <body>
 
+<!-- NAV -->
 <nav class="nav" id="nav">
   <a href="#" class="logo">CINEMA<span>·</span>HOUSE</a>
   <ul class="nav-links" id="navLinks">
@@ -417,6 +418,7 @@
 </nav>
 <div class="menu-overlay" id="menuOverlay"></div>
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-content">
@@ -431,6 +433,7 @@
   <div class="hero-scroll">Scroll</div>
 </section>
 
+<!-- ABOUT -->
 <section class="about" id="about">
   <div class="about-grid">
     <div class="reveal">
@@ -490,6 +493,7 @@
   </div>
 </section>
 
+<!-- PORTFOLIO -->
 <section id="portfolio">
   <div class="portfolio-header reveal">
     <div>
@@ -569,6 +573,7 @@
   </div>
 </div>
 
+<!-- SHOWROOM -->
 <section class="showroom" id="showroom">
   <div class="showroom-grid">
     <div class="showroom-image reveal">
@@ -590,6 +595,7 @@
   </div>
 </section>
 
+<!-- PROCESS -->
 <section id="process">
   <div class="reveal">
     <div class="section-label">Процесс работы</div>
@@ -605,6 +611,7 @@
   </div>
 </section>
 
+<!-- EQUIPMENT -->
 <section class="equipment">
   <div class="reveal">
     <div class="section-label">Оборудование</div>
@@ -621,6 +628,7 @@
   </div>
 </section>
 
+<!-- TESTIMONIALS -->
 <section class="testimonials">
   <div class="reveal">
     <div class="section-label" style="justify-content:center">Отзывы клиентов</div>
@@ -633,6 +641,7 @@
   </div>
 </section>
 
+<!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="contact-grid">
     <div class="contact-info reveal">
@@ -674,6 +683,7 @@
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <div class="footer-grid">
     <div class="footer-logo">CINEMA<span>·</span>HOUSE</div>
@@ -691,7 +701,7 @@
 </footer>
 
 <script>
-  // Nav scroll
+  // Nav scroll effect
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 50);
