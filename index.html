@@ -8,7 +8,7 @@
 <meta property="og:title" content="CINEMA HOUSE">
 <meta property="og:description" content="Погружение как в кинотеатре — не выходя из дома.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="img/hero-bg.jpg"> 
+<meta property="og:image" content="img/hero-bg.jpeg"> 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,7 +71,8 @@
   .proof-label{font-size:11px;color:var(--muted);letter-spacing:.8px;text-transform:uppercase}
 
   .hero{position:relative;height:100vh;min-height:700px;display:flex;align-items:center;overflow:hidden}
-  .hero-bg{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,0.35) 0%,rgba(10,10,10,0.8) 60%,#0a0a0a 100%), url('img/hero-bg.jpg') center/cover no-repeat;transform:scale(1.04);animation:slowZoom 22s ease-in-out infinite alternate}
+  /* ИСПРАВЛЕНО: hero-bg.jpeg */
+  .hero-bg{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,0.35) 0%,rgba(10,10,10,0.8) 60%,#0a0a0a 100%), url('img/hero-bg.jpeg') center/cover no-repeat;transform:scale(1.04);animation:slowZoom 22s ease-in-out infinite alternate}
   @keyframes slowZoom{to{transform:scale(1.1)}}
   
   .hero-content{position:relative;z-index:2;padding:0 5vw;max-width:1080px}
@@ -114,7 +115,7 @@
   .cert-text h3 { font-family: 'Playfair Display', serif; font-size: 28px; margin-bottom: 10px; }
   .cert-text h3 span { color: var(--gold); }
   .cert-text p { color: var(--muted); font-size: 16px; max-width: 600px; }
-  .cert-btn { padding: 15px 30px; background: transparent; border: 1px solid var(--gold); color: var(--gold); font-size: 14px; letter-spacing: 1px; text-transform: uppercase; transition: all 0.3s; white-space: nowrap; }
+  .cert-btn { padding: 15px 30px; background: transparent; border: 1px solid var(--gold); color: var(--gold); font-size: 14px; letter-spacing: 1px; text-transform: uppercase; transition: all 0.3s; white-space: nowrap; cursor: pointer;}
   .cert-btn:hover { background: var(--gold); color: #000; }
 
   /* ABOUT & TEAM */
@@ -370,7 +371,7 @@
     <h3>Получите сертификат на <span>50 000 ₽</span></h3>
     <p>При заполнении формы на сайте до конца месяца. Сертификат можно использовать на любой проект или оборудование.</p>
   </div>
-  <a href="#contact" class="cert-btn">Получить сертификат</a>
+  <button class="cert-btn" onclick="document.querySelector('#contact').scrollIntoView({behavior: 'smooth'})">Получить сертификат</button>
 </div>
 
 <section class="about" id="about">
@@ -387,7 +388,8 @@
       </div>
     </div>
     <div class="about-image reveal">
-      <img src="img/about.jpg" alt="О компании" onerror="this.style.display='none'"> 
+      <!-- ИСПРАВЛЕНО: about.jpeg -->
+      <img src="img/about.jpeg" alt="О компании" onerror="this.style.display='none'"> 
     </div>
   </div>
 
@@ -397,19 +399,19 @@
     <h2 class="section-title" style="text-align: center; margin: 0 auto 20px;">Эксперты, а не <em>менеджеры</em></h2>
     <div class="team-grid">
       <div class="team-card">
-        <div class="team-avatar"><img src="img/team1.jpg" onerror="this.src='https://via.placeholder.com/100x100/111/333?text=Фото'" alt=""></div>
+        <div class="team-avatar"><img src="img/team1.jpeg" onerror="this.src='https://via.placeholder.com/100x100/111/333?text=Фото'" alt=""></div>
         <div class="team-name">Алексей Петров</div>
         <div class="team-role">Главный инженер-акустик</div>
         <div class="team-desc">15 лет опыта. Спроектировал более 100 залов уровня THX. Лично выезжает на каждый объект.</div>
       </div>
       <div class="team-card">
-        <div class="team-avatar"><img src="img/team2.jpg" onerror="this.src='https://via.placeholder.com/100x100/111/333?text=Фото'" alt=""></div>
+        <div class="team-avatar"><img src="img/team2.jpeg" onerror="this.src='https://via.placeholder.com/100x100/111/333?text=Фото'" alt=""></div>
         <div class="team-name">Мария Соколова</div>
         <div class="team-role">Дизайнер интерьеров</div>
         <div class="team-desc">Член союза дизайнеров. Специализируется на интеграции техники в премиальные интерьеры.</div>
       </div>
       <div class="team-card">
-        <div class="team-avatar"><img src="img/team3.jpg" onerror="this.src='https://via.placeholder.com/100x100/111/333?text=Фото'" alt=""></div>
+        <div class="team-avatar"><img src="img/team3.jpeg" onerror="this.src='https://via.placeholder.com/100x100/111/333?text=Фото'" alt=""></div>
         <div class="team-name">Дмитрий Волков</div>
         <div class="team-role">Руководитель монтажа</div>
         <div class="team-desc">Опыт в строительстве с 2005 года. Контролирует соблюдение всех акустических норм.</div>
@@ -441,7 +443,7 @@
   </div>
 </section>
 
-<!--  НОВЫЙ БЛОК: ПАКЕТЫ УСЛУГ -->
+<!-- 🆕 НОВЫЙ БЛОК: ПАКЕТЫ УСЛУГ -->
 <section class="services-section" id="services">
   <div class="reveal">
     <div class="section-label" style="justify-content: center;">Наши услуги</div>
@@ -506,6 +508,7 @@
 
   <div class="grid-container reveal">
     <div class="grid-item">
+      <!-- ИСПРАВЛЕНО: project1.jpeg -->
       <img src="img/project1.jpeg" alt="Проект 1" onerror="this.src='https://via.placeholder.com/600x450/111/333?text=Фото+проекта+1'">
       <div class="grid-caption">
         <h3>Резиденция «Барвиха»</h3>
@@ -535,6 +538,7 @@
     <h2 class="section-title">Детали <em>совершенства</em></h2>
     <p class="section-sub">Реальные фото наших объектов: от черновой акустической подготовки до финального интерьера.</p>
     <div class="grid-container">
+      <!-- ИСПРАВЛЕНО: gallery*.jpeg -->
       <div class="grid-item"><img src="img/gallery1.jpeg" alt="Интерьер" onerror="this.src='https://via.placeholder.com/600x450/111/333?text=Ваше+фото+1'"><div class="grid-caption"><span class="grid-caption">Финальный интерьер</span></div></div>
       <div class="grid-item"><img src="img/gallery2.jpeg" alt="Акустика" onerror="this.src='https://via.placeholder.com/600x450/111/333?text=Ваше+фото+2'"><div class="grid-caption"><span class="grid-caption">Акустическая подготовка</span></div></div>
       <div class="grid-item"><img src="img/gallery3.jpeg" alt="Свет" onerror="this.src='https://via.placeholder.com/600x450/111/333?text=Ваше+фото+3'"><div class="grid-caption"><span class="grid-caption">Световые сценарии</span></div></div>
